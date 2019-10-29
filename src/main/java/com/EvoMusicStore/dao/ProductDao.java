@@ -11,18 +11,39 @@ public class ProductDao {
 
     public List<Product> getProductList() {
         Product product1 = new Product();
-
-        product1.setProductName("Guitar1");
+        product1.setProductName("Fender Stratocaster");
         product1.setProductCategory("Instrument");
         product1.setProductDescription("This is a Fender Strat guitar");
         product1.setProductPrice(2100);
         product1.setProductCondition("New");
         product1.setProductStatus("Active");
-        product1.setUnitStock(25);
+        product1.setUnitStock(11);
         product1.setProductManufacturer("Fender");
+
+        Product product2 = new Product();
+        product2.setProductName("Gibson Les Paul");
+        product2.setProductCategory("Instrument");
+        product2.setProductDescription("This is a Gibson Les Paul guitar");
+        product2.setProductPrice(8100);
+        product2.setProductCondition("New");
+        product2.setProductStatus("Active");
+        product2.setUnitStock(5);
+        product2.setProductManufacturer("Gibson");
+
+        Product product3 = new Product();
+        product3.setProductName("BOSS GT-1000");
+        product3.setProductCategory("Guitar effects");
+        product3.setProductDescription("This is a BOSS GT-1000 guitar processor");
+        product3.setProductPrice(29);
+        product3.setProductCondition("New");
+        product3.setProductStatus("Active");
+        product3.setUnitStock(8);
+        product3.setProductManufacturer("BOSS");
 
         productList = new ArrayList<Product>();
         productList.add(product1);
+        productList.add(product2);
+        productList.add(product3);
 
         return productList;
 
